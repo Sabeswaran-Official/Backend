@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/samp.css' %}">
+</head>
+<body>
+    <h1>Hello</h1>
+    <p>My name is {{name}} and age is {{age}}</p>
+
+    <button onclick="GetData() ">Get data</button>
+    <button onclick="CreateData()">Create data</button>
+    <button onclick="UpdateData()">Update data</button> 
+    <button onclick="DeleteData()">Delete data</button> <br>
+    <button onclick="StudData()">Students data</button>
+
+    <script src="{% static 'js/sample.js' %}"></script>
+</body>
+</html>
